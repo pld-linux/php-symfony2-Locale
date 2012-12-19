@@ -10,7 +10,7 @@ License:	MIT
 Group:		Development/Languages/PHP
 Source0:	http://pear.symfony.com/get/%{pearname}-%{version}.tgz
 # Source0-md5:	33c740ad31510ce6187b6f11ea8a4e87
-URL:		http://pear.symfony.com/package/Locale/
+URL:		http://symfony.com/doc/current/components/locale.html
 BuildRequires:	php-channel(pear.symfony.com)
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
