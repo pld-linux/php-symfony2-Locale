@@ -4,12 +4,12 @@
 %include	/usr/lib/rpm/macros.php
 Summary:	%{pearname} - Symfony2 Locale Component
 Name:		php-symfony2-Locale
-Version:	2.1.4
+Version:	2.1.6
 Release:	1
 License:	MIT
 Group:		Development/Languages/PHP
 Source0:	http://pear.symfony.com/get/%{pearname}-%{version}.tgz
-# Source0-md5:	33c740ad31510ce6187b6f11ea8a4e87
+# Source0-md5:	ba9335048f0b3fbe7625e58771bd6bdc
 URL:		http://symfony.com/doc/current/components/locale.html
 BuildRequires:	php-channel(pear.symfony.com)
 BuildRequires:	php-pear-PEAR
