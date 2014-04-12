@@ -1,20 +1,24 @@
+# NOTE:
+# The Locale component is deprecated since version 2.3 and will be removed in
+# Symfony 3.0. You should use the more capable Intl component instead.
 %define		pearname	Locale
 %define		php_min_version 5.3.3
 %include	/usr/lib/rpm/macros.php
 Summary:	Symfony2 Locale Component
 Name:		php-symfony2-Locale
-Version:	2.3.4
+Version:	2.4.3
 Release:	1
 License:	MIT
 Group:		Development/Languages/PHP
 Source0:	http://pear.symfony.com/get/%{pearname}-%{version}.tgz
-# Source0-md5:	adb78ff97232f68c2e1e7097fbd0b146
+# Source0-md5:	20a8bf5a877b47dcf071e2b58b2b30e5
 URL:		http://symfony.com/doc/2.2/components/locale.html
 BuildRequires:	php-channel(pear.symfony.com)
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 BuildRequires:	rpmbuild(macros) >= 1.610
 Requires:	php(core) >= %{php_min_version}
+Requires:	php(spl)
 Requires:	php-channel(pear.symfony.com)
 Requires:	php-pear >= 4:1.3.10
 Requires:	php-symfony2-Intl >= 2.3
