@@ -6,12 +6,12 @@
 %include	/usr/lib/rpm/macros.php
 Summary:	Symfony2 Locale Component
 Name:		php-symfony2-Locale
-Version:	2.7.3
+Version:	2.7.5
 Release:	1
 License:	MIT
 Group:		Development/Languages/PHP
 Source0:	https://github.com/symfony/%{package}/archive/v%{version}/%{package}-%{version}.tar.gz
-# Source0-md5:	8d3eba870eca1e6848df7159a8d3b4bc
+# Source0-md5:	da5633ce097eb4d48ab4111bc8c83381
 URL:		http://symfony.com/doc/2.2/components/locale.html
 BuildRequires:	phpab
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
@@ -19,7 +19,7 @@ BuildRequires:	rpmbuild(macros) >= 1.610
 Requires:	php(core) >= %{php_min_version}
 Requires:	php(spl)
 Requires:	php-pear >= 4:1.3.10
-Requires:	php-symfony2-Intl >= 2.3
+Requires:	php-symfony2-Intl >= 2.7
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -33,7 +33,7 @@ removed in Symfony 3.0. You should use the more capable Intl component
 instead.
 
 %prep
-%setup -q -n %{package}-%{version}
+%setup -q -n locale-%{version}
 
 %build
 phpab -n -e '*/Tests/*' -o autoloader.php .
