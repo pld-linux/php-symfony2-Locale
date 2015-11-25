@@ -6,12 +6,12 @@
 %include	/usr/lib/rpm/macros.php
 Summary:	Symfony2 Locale Component
 Name:		php-symfony2-Locale
-Version:	2.7.5
+Version:	2.7.7
 Release:	1
 License:	MIT
 Group:		Development/Languages/PHP
 Source0:	https://github.com/symfony/%{package}/archive/v%{version}/%{package}-%{version}.tar.gz
-# Source0-md5:	da5633ce097eb4d48ab4111bc8c83381
+# Source0-md5:	3e8b58e9525529ff543f68096e93ed7c
 URL:		http://symfony.com/doc/2.2/components/locale.html
 BuildRequires:	phpab
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
@@ -36,7 +36,7 @@ instead.
 %setup -q -n locale-%{version}
 
 %build
-phpab -n -e '*/Tests/*' -o autoloader.php .
+phpab -n -e '*/Tests/*' -o autoload.php .
 
 %install
 rm -rf $RPM_BUILD_ROOT
