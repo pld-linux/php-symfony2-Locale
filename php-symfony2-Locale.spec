@@ -17,6 +17,7 @@ BuildRequires:	phpab
 BuildRequires:	rpmbuild(macros) >= 1.610
 Requires:	php(core) >= %{php_min_version}
 Requires:	php(spl)
+Requires:	php-dirs >= 1.6
 Requires:	php-symfony2-Intl >= 2.7
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
