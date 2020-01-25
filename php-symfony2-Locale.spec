@@ -3,7 +3,6 @@
 # Symfony 3.0. You should use the more capable Intl component instead.
 %define		package	Locale
 %define		php_min_version 5.3.9
-%include	/usr/lib/rpm/macros.php
 Summary:	Symfony2 Locale Component
 Name:		php-symfony2-Locale
 Version:	2.7.8
