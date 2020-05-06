@@ -5,12 +5,12 @@
 %define		php_min_version 5.3.9
 Summary:	Symfony2 Locale Component
 Name:		php-symfony2-Locale
-Version:	2.7.8
+Version:	2.8.52
 Release:	1
 License:	MIT
 Group:		Development/Languages/PHP
 Source0:	https://github.com/symfony/%{package}/archive/v%{version}/%{package}-%{version}.tar.gz
-# Source0-md5:	29d56c3c9d975dff0ed55264531a4d42
+# Source0-md5:	dfa4df9bfdc21e3edfaf4200d1dbebf8
 URL:		http://symfony.com/doc/2.2/components/locale.html
 BuildRequires:	phpab
 BuildRequires:	rpmbuild(macros) >= 1.610
