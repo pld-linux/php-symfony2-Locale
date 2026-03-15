@@ -6,7 +6,7 @@
 Summary:	Symfony2 Locale Component
 Name:		php-symfony2-Locale
 Version:	2.8.52
-Release:	1
+Release:	2
 License:	MIT
 Group:		Development/Languages/PHP
 Source0:	https://github.com/symfony/%{package}/archive/v%{version}/%{package}-%{version}.tar.gz
